@@ -76,11 +76,11 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                 .withArrayClaim("roles",roles.toArray(new String[roles.size()]))
                 .withExpiresAt(new Date(System.currentTimeMillis()+ SecurityParams.EXPIRATION))
                 .withClaim("passwordChanged",passwordChanged)
-                .withArrayClaim("categorieRoles", categorieRoles)
-                .withArrayClaim("rolesByDomain",rolesByDomain)
+//                .withArrayClaim("categorieRoles", categorieRoles)
+//                .withArrayClaim("rolesByDomain",rolesByDomain)
                 .sign(Algorithm.HMAC256(SecurityParams.SECRET));
-        //response.addHeader(SecurityParams.JWT_HEADER_NAME,SecurityParams.HEADER_PREFIX+jwt);
-        response.addHeader(SecurityParams.JWT_HEADER_NAME,jwt);
+        response.addHeader(SecurityParams.JWT_HEADER_NAME,SecurityParams.HEADER_PREFIX+jwt);
+        //response.addHeader(SecurityParams.JWT_HEADER_NAME,jwt);
         System.out.println(jwt);
     }
 
