@@ -1,0 +1,136 @@
+        <p-dialog [(visible)]="editDialog" [style]="{width: '70vw'}" header="{{'utilisateurTabPan' | translate}}" [modal]="true" styleClass="p-fluid" [maximizable]="true" [draggable]="false" [resizable]="false">
+            <ng-template pTemplate="content" >
+                <p-tabView>
+                    <p-tabPanel header="{{'utilisateurTabPan' | translate}}">
+                        <div class="grid">
+
+
+                                        <div class="field col-12 md:col-3">
+                                            <label for="1">{{'utilisateurEmail' | translate}}<span style="color: red;">*</span></label>
+                                            <input   appendTo="body" class="mb-2 mr-2" type="text" pInputText placeholder="{{'utilisateurEmail' | translate}}" id="1" [(ngModel)]="item.email"
+                                                    [ngClass]="{'ng-invalid ng-dirty' : !validUtilisateurEmail}"  />
+                                            <small class='p-error' *ngIf='!validUtilisateurEmail'>Email est obligatoire.</small>
+                                        </div>
+
+                                        <div class="field align-inputswitch col-12  md:col-3">
+                                            <div  class="label-inputswitch">
+                                                <label for="2">{{'utilisateurAccountNonExpired' | translate}}</label>
+                                            </div>
+                                            <div class="input-switch">
+                                                <p-inputSwitch   appendTo="body" id="2"  [(ngModel)]="item.accountNonExpired"
+                                                         >
+                                                </p-inputSwitch>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="field align-inputswitch col-12  md:col-3">
+                                            <div  class="label-inputswitch">
+                                                <label for="3">{{'utilisateurAccountNonLocked' | translate}}</label>
+                                            </div>
+                                            <div class="input-switch">
+                                                <p-inputSwitch   appendTo="body" id="3"  [(ngModel)]="item.accountNonLocked"
+                                                         >
+                                                </p-inputSwitch>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="field col-12 md:col-3">
+                                            <label for="4">{{'utilisateurUsername' | translate}}<span style="color: red;">*</span></label>
+                                            <input   appendTo="body" class="mb-2 mr-2" type="text" pInputText placeholder="{{'utilisateurUsername' | translate}}" id="4" [(ngModel)]="item.username"
+                                                    [ngClass]="{'ng-invalid ng-dirty' : !validUtilisateurUsername}"  />
+                                            <small class='p-error' *ngIf='!validUtilisateurUsername'>Username est obligatoire.</small>
+                                        </div>
+
+                                        <div class="field col-12 md:col-3">
+                                            <label for="5">{{'utilisateurPassword' | translate}}<span style="color: red;">*</span></label>
+                                            <input   appendTo="body" class="mb-2 mr-2" type="text" pInputText placeholder="{{'utilisateurPassword' | translate}}" id="5" [(ngModel)]="item.password"
+                                                    [ngClass]="{'ng-invalid ng-dirty' : !validUtilisateurPassword}"  />
+                                            <small class='p-error' *ngIf='!validUtilisateurPassword'>Password est obligatoire.</small>
+                                        </div>
+
+                                        <div class="field col-12 md:col-3">
+                                            <label for="6">{{'utilisateurLastName' | translate}}<span style="color: red;">*</span></label>
+                                            <input   appendTo="body" class="mb-2 mr-2" type="text" pInputText placeholder="{{'utilisateurLastName' | translate}}" id="6" [(ngModel)]="item.lastName"
+                                                    [ngClass]="{'ng-invalid ng-dirty' : !validUtilisateurLastName}"  />
+                                            <small class='p-error' *ngIf='!validUtilisateurLastName'>LastName est obligatoire.</small>
+                                        </div>
+
+                                        <div class="field col-12 md:col-3">
+                                            <label for="7">{{'utilisateurFirstName' | translate}}<span style="color: red;">*</span></label>
+                                            <input   appendTo="body" class="mb-2 mr-2" type="text" pInputText placeholder="{{'utilisateurFirstName' | translate}}" id="7" [(ngModel)]="item.firstName"
+                                                    [ngClass]="{'ng-invalid ng-dirty' : !validUtilisateurFirstName}"  />
+                                            <small class='p-error' *ngIf='!validUtilisateurFirstName'>FirstName est obligatoire.</small>
+                                        </div>
+
+                                        <div class="field align-inputswitch col-12  md:col-3">
+                                            <div  class="label-inputswitch">
+                                                <label for="8">{{'utilisateurPasswordChanged' | translate}}</label>
+                                            </div>
+                                            <div class="input-switch">
+                                                <p-inputSwitch   appendTo="body" id="8"  [(ngModel)]="item.passwordChanged"
+                                                         >
+                                                </p-inputSwitch>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="field col-12 md:col-3">
+                                            <label for="9">{{'utilisateurFailedAttemptCount' | translate}}</label>
+                                            <p-inputNumber  appendTo="body" class="mb-2 mr-2" id="9"
+                                                           placeholder="{{'utilisateurFailedAttemptCount' | translate}}" [(ngModel)]="item.failedAttemptCount"  >
+                                            </p-inputNumber>
+                                            
+                                        </div>
+
+                                        <div class="field col-12 md:col-3">
+                                            <label for="10">{{'utilisateurDateLock' | translate}}</label>
+                                            <p-calendar appendTo="body" id="10"   [showTime]="true" [showSeconds]="false" placeholder="{{'utilisateurDateLock' | translate}}"  [(ngModel)]="item.dateLock"
+                                                    dateFormat="{{dateFormat}}"  >
+                                            </p-calendar>
+                                            
+                                        </div>
+
+                        </div>
+                    </p-tabPanel>
+                            <p-tabPanel header="droit">
+                                <div class="grid">
+                                    <div class="col">
+                                        <div class="card">
+                                            <p-table [value]="droitUtilisateurs" [(selection)]="item.droitUtilisateurs" dataKey="droit.authority" [scrollable]="true" scrollHeight="200px">
+                                                <ng-template pTemplate="header">
+                                                    <tr>
+                                                        <th>Droit</th>
+                                                    </tr>
+                                                </ng-template>
+                                                <ng-template pTemplate="body" let-p>
+                                                    <tr>
+                                                        <td><p-tableCheckbox [value]="p" ></p-tableCheckbox></td>
+                                                        <td>{{p.droit?.authority}}</td>
+                                                    </tr>
+                                                </ng-template>
+                                            </p-table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </p-tabPanel>
+
+                </p-tabView>
+            </ng-template>
+
+            <ng-template pTemplate="footer" >
+                <div class="grid-footer">
+                        <div>
+                            <button pButton pRipple label="Annuler" icon="pi pi-times" class="p-button-outlined" (click)="hideEditDialog()"></button>
+                        </div>
+                    <div>
+                        <button pButton pRipple label="Valider" icon="pi pi-check" style="margin:10px" (click)="edit()"></button>
+                    </div>
+                </div>
+            </ng-template>
+
+
+                            <app-droit-create-admin></app-droit-create-admin>
+
+    </p-dialog>

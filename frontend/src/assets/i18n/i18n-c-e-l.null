@@ -1,0 +1,179 @@
+{
+    'Les éléments de {first} à {last} sur {totalRecords} ': 'Les éléments de {first} à {last} sur {totalRecords} ',
+    'droitHeader': 'Liste des droits',
+    'searchInput': 'Chercher...',
+    'droitTabPan': 'Droit',
+
+
+        'Id': 'Id',
+            'droitAuthority': 'Authority',
+
+        'Authority': 'Authority',
+    'Les éléments de {first} à {last} sur {totalRecords} ': 'Les éléments de {first} à {last} sur {totalRecords} ',
+    'clientHeader': 'Liste des clients',
+    'searchInput': 'Chercher...',
+    'clientTabPan': 'Client',
+
+
+        'Id': 'Id',
+            'clientCin': 'Cin',
+
+        'Cin': 'Cin',
+            'clientNom': 'Nom',
+
+        'Nom': 'Nom',
+            'clientTel': 'Tel',
+
+        'Tel': 'Tel',
+            'clientEmail': 'Email',
+
+        'Email': 'Email',
+            'clientAdresse': 'Adresse',
+
+        'Adresse': 'Adresse',
+            'clientDescription': 'Description',
+
+        'Description': 'Description',
+            'clientCreance': 'Creance',
+
+        'Creance': 'Creance',
+    'Les éléments de {first} à {last} sur {totalRecords} ': 'Les éléments de {first} à {last} sur {totalRecords} ',
+    'produitHeader': 'Liste des produits',
+    'searchInput': 'Chercher...',
+    'produitTabPan': 'Produit',
+
+
+        'Id': 'Id',
+            'produitReference': 'Reference',
+
+        'Reference': 'Reference',
+            'produitLibelle': 'Libelle',
+
+        'Libelle': 'Libelle',
+            'produitBarcode': 'Barcode',
+
+        'Barcode': 'Barcode',
+            'produitDiscription': 'Discription',
+
+        'Discription': 'Discription',
+            'produitPrixAchatMoyen': 'Prix achat moyen',
+
+        'Prix achat moyen': 'Prix achat moyen',
+            'produitQuantite': 'Quantite',
+
+        'Quantite': 'Quantite',
+            'produitSeuilAlert': 'Seuil alert',
+
+        'Seuil alert': 'Seuil alert',
+    'Les éléments de {first} à {last} sur {totalRecords} ': 'Les éléments de {first} à {last} sur {totalRecords} ',
+    'achatHeader': 'Liste des achats',
+    'searchInput': 'Chercher...',
+    'achatTabPan': 'Achat',
+
+
+        'Id': 'Id',
+            'achatReference': 'Reference',
+
+        'Reference': 'Reference',
+            'achatDateAchat': 'Date achat',
+
+        'Date achat': 'Date achat',
+            'achatTotal': 'Total',
+
+        'Total': 'Total',
+            'achatTotalPaye': 'Total paye',
+
+        'Total paye': 'Total paye',
+            'achatDescription': 'Description',
+
+        'Description': 'Description',
+            'achatClient': 'Client',
+
+        'Client': 'Client',
+            'achatAchatItems': 'Achat items',
+
+        'Achat items': 'Achat items',
+    'Les éléments de {first} à {last} sur {totalRecords} ': 'Les éléments de {first} à {last} sur {totalRecords} ',
+    'droitUtilisateurHeader': 'Liste des droit utilisateurs',
+    'searchInput': 'Chercher...',
+    'droitUtilisateurTabPan': 'Droit utilisateur',
+
+
+        'Id': 'Id',
+            'droitUtilisateurDroit': 'Droit',
+
+        'Droit': 'Droit',
+            'droitUtilisateurUtilisateur': 'Utilisateur',
+
+        'Utilisateur': 'Utilisateur',
+    'Les éléments de {first} à {last} sur {totalRecords} ': 'Les éléments de {first} à {last} sur {totalRecords} ',
+    'achatItemHeader': 'Liste des achat items',
+    'searchInput': 'Chercher...',
+    'achatItemTabPan': 'Achat item',
+
+
+        'Id': 'Id',
+            'achatItemProduit': 'Produit',
+
+        'Produit': 'Produit',
+            'achatItemPrixUnitaire': 'Prix unitaire',
+
+        'Prix unitaire': 'Prix unitaire',
+            'achatItemPrixVente': 'Prix vente',
+
+        'Prix vente': 'Prix vente',
+            'achatItemQuantite': 'Quantite',
+
+        'Quantite': 'Quantite',
+            'achatItemQuantiteAvoir': 'Quantite avoir',
+
+        'Quantite avoir': 'Quantite avoir',
+            'achatItemRemise': 'Remise',
+
+        'Remise': 'Remise',
+            'achatItemAchat': 'Achat',
+
+        'Achat': 'Achat',
+    'Les éléments de {first} à {last} sur {totalRecords} ': 'Les éléments de {first} à {last} sur {totalRecords} ',
+    'utilisateurHeader': 'Liste des utilisateurs',
+    'searchInput': 'Chercher...',
+    'utilisateurTabPan': 'Utilisateur',
+
+
+        'Id': 'Id',
+            'utilisateurEmail': 'Email',
+
+        'Email': 'Email',
+            'utilisateurAccountNonExpired': 'Account non expired',
+
+        'Account non expired': 'Account non expired',
+            'utilisateurAccountNonLocked': 'Account non locked',
+
+        'Account non locked': 'Account non locked',
+            'utilisateurUsername': 'Username',
+
+        'Username': 'Username',
+            'utilisateurPassword': 'Password',
+
+        'Password': 'Password',
+            'utilisateurLastName': 'Last name',
+
+        'Last name': 'Last name',
+            'utilisateurFirstName': 'First name',
+
+        'First name': 'First name',
+            'utilisateurPasswordChanged': 'Password changed',
+
+        'Password changed': 'Password changed',
+            'utilisateurFailedAttemptCount': 'Failed attempt count',
+
+        'Failed attempt count': 'Failed attempt count',
+            'utilisateurDateLock': 'Date lock',
+
+        'Date lock': 'Date lock',
+            'utilisateurDroitUtilisateurs': 'Droit utilisateurs',
+
+        'Droit utilisateurs': 'Droit utilisateurs',
+}
+
+

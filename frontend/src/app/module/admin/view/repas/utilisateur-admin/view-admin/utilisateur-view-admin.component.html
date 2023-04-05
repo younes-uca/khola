@@ -1,0 +1,96 @@
+
+<p-dialog [(visible)]="viewDialog" [style]="{width: '70vw'}" header="{{'utilisateurTabPan' | translate}}" [modal]="true" styleClass="p-fluid">
+    <ng-template pTemplate="content">
+        <p-tabView>
+            <p-tabPanel header="Information">
+                <div class="grid">
+                    <div class="field col-12 md:col-3">
+                        <label for="1">{{'Email' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'Email' | translate}}" autofocus  id="1" [(ngModel)]="item.email">
+                    </div>
+                    <div class="field align-inputswitch col-12  md:col-3">
+                        <div  class="label-inputswitch">
+                            <label for="2">{{'Account non expired' | translate}}</label>
+                        </div>
+                        <div class="input-switch">
+                            <p-inputSwitch id="2"  [disabled]="true" [(ngModel)]="item.accountNonExpired"></p-inputSwitch>
+                        </div>
+                    </div>
+                    <div class="field align-inputswitch col-12  md:col-3">
+                        <div  class="label-inputswitch">
+                            <label for="3">{{'Account non locked' | translate}}</label>
+                        </div>
+                        <div class="input-switch">
+                            <p-inputSwitch id="3"  [disabled]="true" [(ngModel)]="item.accountNonLocked"></p-inputSwitch>
+                        </div>
+                    </div>
+                    <div class="field col-12 md:col-3">
+                        <label for="4">{{'Username' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'Username' | translate}}" autofocus  id="4" [(ngModel)]="item.username">
+                    </div>
+                    <div class="field col-12 md:col-3">
+                        <label for="5">{{'Password' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'Password' | translate}}" autofocus  id="5" [(ngModel)]="item.password">
+                    </div>
+                    <div class="field col-12 md:col-3">
+                        <label for="6">{{'Last name' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'Last name' | translate}}" autofocus  id="6" [(ngModel)]="item.lastName">
+                    </div>
+                    <div class="field col-12 md:col-3">
+                        <label for="7">{{'First name' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'First name' | translate}}" autofocus  id="7" [(ngModel)]="item.firstName">
+                    </div>
+                    <div class="field align-inputswitch col-12  md:col-3">
+                        <div  class="label-inputswitch">
+                            <label for="8">{{'Password changed' | translate}}</label>
+                        </div>
+                        <div class="input-switch">
+                            <p-inputSwitch id="8"  [disabled]="true" [(ngModel)]="item.passwordChanged"></p-inputSwitch>
+                        </div>
+                    </div>
+                    <div class="field col-12 md:col-3">
+                        <label for="9">{{'Failed attempt count' | translate}}</label>
+                        <p-inputNumber class="mb-2 mr-2" id="9" [disabled]="true" placeholder="{{'Failed attempt count' | translate}}" [(ngModel)]="item.failedAttemptCount"></p-inputNumber>
+                    </div>
+                    <div class="field col-12 md:col-3">
+                        <label for="10">{{'Date lock' | translate}}</label>
+                        <p-calendar id="10" [disabled]="true"  [showTime]="true" [showSeconds]="false" placeholder="{{'Date lock' | translate}}"  [(ngModel)]="item.dateLock" dateFormat="{{dateFormat}}"></p-calendar>
+                    </div>
+                </div>
+            </p-tabPanel>
+
+            <p-tabPanel header="{{'Droit utilisateurs' | translate}}">
+                <div class="grid">
+                    <div class="col">
+                        <div class="card">
+                            <p-table [value]="item.droitUtilisateurs" [scrollable]="true" scrollHeight="200px">
+                                <ng-template pTemplate="header">
+                                    <tr>
+                                        <th>Droit</th>
+                                    </tr>
+                                </ng-template>
+                                <ng-template pTemplate="body" let-p>
+                                    <tr>
+                                        <td>{{p.droit?.authority}}</td>
+                                    </tr>
+                                </ng-template>
+                            </p-table>
+                        </div>
+                    </div>
+                </div>
+            </p-tabPanel>
+        </p-tabView>
+
+    </ng-template>
+
+    <ng-template pTemplate="footer" >
+        <div class="grid-footer">
+            <div>
+                <button pButton pRipple label="Annuler" icon="pi pi-times" class="p-button-outlined" (click)="hideViewDialog()"></button>
+            </div>
+        </div>
+    </ng-template>
+</p-dialog>
+
+
+

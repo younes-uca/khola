@@ -1,0 +1,77 @@
+{
+    "new" : "New",
+    "search": "Search",
+    "export": "Export",
+    "validate": "Validate",
+    "from-to": "Elements from {first} to {last} (total {totalRecords})",
+    "search": "Seach...",
+    "delete": "Delete",
+
+
+    "droitTabPan": "Droit",
+    "droitHeader": "Liste des droits",
+    "droitAuthority": "Authority",
+
+    "clientTabPan": "Client",
+    "clientHeader": "Liste des clients",
+    "clientCin": "Cin",
+    "clientNom": "Nom",
+    "clientTel": "Tel",
+    "clientEmail": "Email",
+    "clientAdresse": "Adresse",
+    "clientDescription": "Description",
+    "clientCreance": "Creance",
+
+    "produitTabPan": "Produit",
+    "produitHeader": "Liste des produits",
+    "produitReference": "Reference",
+    "produitLibelle": "Libelle",
+    "produitBarcode": "Barcode",
+    "produitDiscription": "Discription",
+    "produitPrixAchatMoyen": "Prix achat moyen",
+    "produitQuantite": "Quantite",
+    "produitSeuilAlert": "Seuil alert",
+
+    "achatTabPan": "Achat",
+    "achatHeader": "Liste des achats",
+    "achatReference": "Reference",
+    "achatDateAchat": "Date achat",
+    "achatTotal": "Total",
+    "achatTotalPaye": "Total paye",
+    "achatDescription": "Description",
+    "achatClient": "Client",
+    "achatAchatItems": "Achat items",
+    "Achat items": "Achat items",
+
+    "droitUtilisateurTabPan": "Droit utilisateur",
+    "droitUtilisateurHeader": "Liste des droit utilisateurs",
+    "droitUtilisateurDroit": "Droit",
+    "droitUtilisateurUtilisateur": "Utilisateur",
+
+    "achatItemTabPan": "Achat item",
+    "achatItemHeader": "Liste des achat items",
+    "achatItemProduit": "Produit",
+    "achatItemPrixUnitaire": "Prix unitaire",
+    "achatItemPrixVente": "Prix vente",
+    "achatItemQuantite": "Quantite",
+    "achatItemQuantiteAvoir": "Quantite avoir",
+    "achatItemRemise": "Remise",
+    "achatItemAchat": "Achat",
+
+    "utilisateurTabPan": "Utilisateur",
+    "utilisateurHeader": "Liste des utilisateurs",
+    "utilisateurEmail": "Email",
+    "utilisateurAccountNonExpired": "Account non expired",
+    "utilisateurAccountNonLocked": "Account non locked",
+    "utilisateurUsername": "Username",
+    "utilisateurPassword": "Password",
+    "utilisateurLastName": "Last name",
+    "utilisateurFirstName": "First name",
+    "utilisateurPasswordChanged": "Password changed",
+    "utilisateurFailedAttemptCount": "Failed attempt count",
+    "utilisateurDateLock": "Date lock",
+    "utilisateurDroitUtilisateurs": "Droit utilisateurs"
+    "Droit utilisateurs": "Droit utilisateurs"
+}
+
+

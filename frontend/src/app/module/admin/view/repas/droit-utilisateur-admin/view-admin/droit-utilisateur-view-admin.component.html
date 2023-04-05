@@ -1,0 +1,32 @@
+
+<p-dialog [(visible)]="viewDialog" [style]="{width: '70vw'}" header="{{'droitUtilisateurTabPan' | translate}}" [modal]="true" styleClass="p-fluid">
+    <ng-template pTemplate="content">
+        <p-tabView>
+            <p-tabPanel header="Information">
+                <div class="grid">
+                    <div class="field col-12 md:col-6">
+                        <label for="1">{{'Droit' | translate}}</label>
+                        <p-dropdown [options]="droits" [(ngModel)]="item.droit" id="1" [disabled]="true" optionLabel="authority" placeholder="{{'Droit' | translate}}"></p-dropdown>
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="2">{{'Utilisateur' | translate}}</label>
+                        <p-dropdown [options]="utilisateurs" [(ngModel)]="item.utilisateur" id="2" [disabled]="true" optionLabel="username" placeholder="{{'Utilisateur' | translate}}"></p-dropdown>
+                    </div>
+                </div>
+            </p-tabPanel>
+
+        </p-tabView>
+
+    </ng-template>
+
+    <ng-template pTemplate="footer" >
+        <div class="grid-footer">
+            <div>
+                <button pButton pRipple label="Annuler" icon="pi pi-times" class="p-button-outlined" (click)="hideViewDialog()"></button>
+            </div>
+        </div>
+    </ng-template>
+</p-dialog>
+
+
+
